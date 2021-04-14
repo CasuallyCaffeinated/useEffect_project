@@ -13,12 +13,33 @@ function App() {
   const [isYellow, setIsYellow] = useState(false);
 
 useEffect(() => {
-    console.log(`Color red: `, isRed)
-    console.log(`Color orange: `, isOrange)
-    console.log(`Color brown: `, isBrown)
-    console.log(`Color light brown: `, isLightBrown)
-    console.log(`Color yellow: `, isYellow)
+    // console.log(`Color red: `, isRed)
+    // console.log(`Color orange: `, isOrange)
+    // console.log(`Color brown: `, isBrown)
+    // console.log(`Color light brown: `, isLightBrown)
+    // console.log(`Color yellow: `, isYellow)
+
+    const colorArr = [];
+    if (isRed){
+        colorArr.push('red')
+    }
+    if (isOrange){
+        colorArr.push('orange')
+    }
+    if (isBrown){
+        colorArr.push('brown')
+    }
+    if (isLightBrown){
+        colorArr.push('light-brown')
+    }
+    if (isYellow){
+        colorArr.push('yellow')
+    }
+    setFeatherColors(colorArr);
+
+
 }, [isRed, isOrange, isBrown, isLightBrown, isYellow])
+
 
   return (
     <>
