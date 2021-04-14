@@ -95,7 +95,7 @@ useEffect(() => {
             featherCount={featherCount}
             featherColors={featherColors}
         />
-        <Message size={size} />
+        <Message featherCount={featherCount} size={size} />
     </>
   );
 }
